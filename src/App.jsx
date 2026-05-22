@@ -1,11 +1,41 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import EmneView from "./views/EmneView";
+import HistorieView from "./views/HistorieView";
+import IntroSliderView from "./views/IntroSliderView";
+import QuizView from "./views/QuizView";
+import SplashView from "./views/SplashView";
+import TaenkSammenView from "./views/TaenkSammenView";
+
+const router = createBrowserRouter([
+    {
+    path: "/",
+    element: <SplashView />,
+    },
+    {
+    path: "intro",
+    element: <IntroSliderView />,
+    },
+    {
+    path: "emne",
+    element: <EmneView />,
+    },
+    {
+    path: "historie",
+    element: <HistorieView />,
+    },
+    {
+    path: "quiz",
+    element: <QuizView />,
+    },
+    {
+    path: "taenk-sammen",
+    element: <TaenkSammenView />,
+    }
+]);
+
 function App() {
-  return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-blue-500">
-        Tailwind virker!
-      </h1>
-    </div>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
