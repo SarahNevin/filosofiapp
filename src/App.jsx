@@ -13,6 +13,10 @@ const router = createBrowserRouter([
     element: <SplashView />,
     },
     {
+      path: "onboarding",
+      element: <OnboardingView />,
+    },
+    {
     path: "intro",
     element: <IntroSliderView />,
     },
