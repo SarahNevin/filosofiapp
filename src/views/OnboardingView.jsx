@@ -1,17 +1,21 @@
-import { CtaKnap } from "../components/CtaKnap";  
+import { useNavigate } from "react-router-dom";
+import { CtaKnap } from "../components/CtaKnap";
+import GyldendalLogo from "../assets/images/gyldendal-logo.svg";  
 
 export default function OnboardingView() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className="flex flex-col items-center gap-6">
-                <CtaKnap onClick={onStart}>
+                <CtaKnap onClick={() => navigate("/intro")}>
                     START REJSEN
                 </CtaKnap>
             </div>
                 <img
                 src={GyldendalLogo}
                 alt="Gyldendal logo"
-                className="absolute bottom-4 left-4 w-24"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 w-24"
             />
         </div>
     );
