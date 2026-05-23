@@ -1,12 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { CtaKnap } from "../components/CtaKnap";
 import GyldendalLogo from "../assets/images/gyldendal-logo.svg";  
+import ScreenHeader from "../components/ScreenHeader";
 
 export default function OnboardingView() {
     const navigate = useNavigate();
 
     return (
         <div>
+            <ScreenHeader
+            tagline="Opdag verden med nye øjne"
+            title="Sofies Verden"
+            level="h1"
+            />
             <div className="flex flex-col items-center gap-6">
                 <CtaKnap onClick={() => navigate("/intro")}>
                     START REJSEN
@@ -15,7 +21,7 @@ export default function OnboardingView() {
                 <img
                 src={GyldendalLogo}
                 alt="Gyldendal logo"
-                className="absolute bottom-4 left-1/2 -translate-x-1/2 w-24"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 w-30"
             />
         </div>
     );
