@@ -19,7 +19,7 @@ export default function SplashView() {
         <img
             src={GyldendalLogo}
             alt="Gyldendal logo"
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 w-24"
+            className="absolute bottom-4 left-1/2 -translate-x-1/2 w-30"
         />
     </div>
   );
