@@ -57,6 +57,8 @@ p {
 
 .CTA-tekst {
     font-family: "cormorant-garamond", serif;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .progress-tekst {
