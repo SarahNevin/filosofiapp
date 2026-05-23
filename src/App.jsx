@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import EmneView from "./views/EmneView";
 import HistorieView from "./views/HistorieView";
 import IntroSliderView from "./views/IntroSliderView";
+import OnboardingView from "./views/OnboardingView";
 import QuizView from "./views/QuizView";
 import SplashView from "./views/SplashView";
 import TaenkSammenView from "./views/TaenkSammenView";
