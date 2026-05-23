@@ -2,11 +2,10 @@
 
 /* Globale styles */
 
-html, body, #root {
+html, body {
     margin: 0;
-    min-height: 100%;
     background: #000000;
-    color: #f3e9dc;
+    min-height: 100%;
 }
 
 body {
@@ -19,7 +18,9 @@ body {
     width: 100%;
     max-width: 393px;
     min-height: 100vh;
-    position: relative;
+    background: #000000;
+    color: #f3e9dc;
+        position: relative;
     overflow: hidden;
 }
 
