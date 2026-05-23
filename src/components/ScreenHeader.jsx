@@ -6,7 +6,7 @@ export default function ScreenHeader({
     const isHeading1 = level === "h1";
 
     return (
-        <header className={`pt-16 flex flex-col items-center ${isHeading1 ? "gap-7" : "gap-3"}`}>
+        <header className={`pt-16 flex flex-col items-center mb-20 ${isHeading1 ? "gap-7" : "gap-3"}`}>
         <h3>{tagline}</h3>
 
         {isHeading1 ? (
