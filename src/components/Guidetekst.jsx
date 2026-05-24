@@ -6,8 +6,7 @@ export default function Guidetekst({
   onBirdClick,
   kanKlikkes = false,
 }) {
-
-    const traneIndhold = (
+  const traneIndhold = (
     <div className={`shrink-0 ${animated ? "animate-bird" : ""}`}>
       <img src={Trane} alt="Tranen Ori" className="w-[150px]" />
     </div>
@@ -17,7 +16,7 @@ export default function Guidetekst({
     <div className="mt-8 flex items-center justify-between pl-5">
       <p className="flex-1">{children}</p>
 
-    {kanKlikkes && onBirdClick ? (
+      {kanKlikkes && onBirdClick ? (
         <button onClick={onBirdClick} type="button">
           {traneIndhold}
         </button>
