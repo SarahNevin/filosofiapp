@@ -63,6 +63,12 @@ p {
   font-weight: 700;
 }
 
+.emne-tekst {
+  font-family: "cormorant-garamond", serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
 .progress-tekst {
   font-size: 21px;
   line-height: 200%;
