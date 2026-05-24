@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import HjemIkon from "../assets/images/hjem.svg;";
-import SoegIkon from "../assets/images/soeg.svg;";
-import ProfilIkon from "../assets/images/profil.svg;";
+import HjemIkon from "../assets/images/hjem.svg";
+import SoegIkon from "../assets/images/soeg.svg";
+import ProfilIkon from "../assets/images/profil.svg";
 
 export default function Navigation() {
   const navigate = useNavigate();
