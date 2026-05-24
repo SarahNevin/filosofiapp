@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
 import Tekstblok from "../components/Tekstblok";
+import Guidetekst from "../components/Guidetekst";
 
 export default function TaenkSammenView() {
   return (
@@ -19,6 +20,10 @@ export default function TaenkSammenView() {
           I sandheden forskelligt?
         </p>
       </Tekstblok>
+
+      <Guidetekst kanKlikkes={false}>
+        "Prøv at se verden gennem en andens øjne."
+      </Guidetekst>
 
       {/* Tekstblok 2 */}
       <Tekstblok title="Overvej dette" level="h2">
