@@ -73,3 +73,9 @@ p {
     line-height: 150%;
 }
 
+.navbar-tekst {
+    font-family: "cormorant-garamond", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #B4B0B0;
+}
