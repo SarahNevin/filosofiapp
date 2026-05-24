@@ -7,7 +7,7 @@ export default function Guidetekst({
   kanKlikkes = false,
 }) {
   const traneIndhold = (
-    <div className={`shrink-0 ${animated ? "animate-bird" : ""}`}>
+    <div className={`shrink-0 ${animated ? "animer-trane" : ""}`}>
       <img src={Trane} alt="Tranen Ori" className="w-[150px]" />
     </div>
   );
