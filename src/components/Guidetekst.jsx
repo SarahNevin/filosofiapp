@@ -6,7 +6,7 @@ export default function Guidetekst({
   onBirdClick,
 }) {
   return (
-    <div className="mt-8 flex flex-col items-center justify-between gap-4">
+    <div className="mt-8 flex items-center justify-between pl-5">
       <p className="flex-1">{children}</p>
       <button
         onClick={onBirdClick}
