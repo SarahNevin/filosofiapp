@@ -1,9 +1,10 @@
+import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
 import platonHule from "../assets/images/platons-hule.webp";
 
 export default function EmneView() {
   return (
-    <div>
+    <div className="min-h-screen pb-[91px]">
       <ScreenHeader
         tagline="Platon"
         title="Ud af hulen"
@@ -18,6 +19,8 @@ export default function EmneView() {
           className="w-full h-[300px] object-cover"
         />
       </div>
+
+      <Navigation />
     </div>
   );
 }

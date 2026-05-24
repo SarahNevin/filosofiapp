@@ -1,6 +1,8 @@
+import Navigation from "../components/Navigation";
 export default function IntroSliderView() {
   return (
-    <div>
+    <div className="min-h-screen pb-[91px]">
+      <Navigation />
     </div>
   );
 }

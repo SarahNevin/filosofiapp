@@ -1,9 +1,10 @@
+import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
 import Tekstblok from "../components/Tekstblok";
 
 export default function TaenkSammenView() {
   return (
-    <div>
+    <div className="min-h-screen pb-[91px]">
       <ScreenHeader
         tagline="Tænk sammen"
         title="Platons hule"
@@ -29,6 +30,8 @@ export default function TaenkSammenView() {
           <li>Hvordan er det, at være alene om at se noget anderledes?</li>
         </ul>
       </Tekstblok>
+
+      <Navigation />
     </div>
   );
 }
