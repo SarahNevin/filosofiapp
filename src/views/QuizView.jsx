@@ -26,8 +26,14 @@ export default function QuizView() {
           <div
             className="relative w-full max-w-[320px] rounded-[20px] bg-black px-4 py-14"
             onClick={(e) => e.stopPropagation()}
-          ></div>
+          >
+        {/* Luk-knap */}
+        <button onClick={() => setPopupVisible(false)}
+          className="absolute top-4 right-4 text-5xl">
+            x
+        </button>
         </div>
+      </div>
       )}
 
       <Navigation />
