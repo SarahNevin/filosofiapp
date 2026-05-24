@@ -43,7 +43,7 @@ h2 {
 h3 {
     font-family: "cormorant-garamond", serif;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 120%;
 }
 
@@ -76,6 +76,6 @@ p {
 .navbar-tekst {
     font-family: "cormorant-garamond", serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     color: #B4B0B0;
 }
