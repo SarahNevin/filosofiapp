@@ -16,9 +16,10 @@ export default function OnboardingView() {
             />
             <Tekstblok
             title="Velkommen, tænker ..."
-            text="Dyk ned i fortællinger, idéer og filosofiske spørgsmål fra Sofies Verden ét tema ad gangen."
             level="h2"
-            />
+            >
+            <p>Dyk ned i fortællinger, idéer og filosofiske spørgsmål fra Sofies Verden ét tema ad gangen.</p>
+            </Tekstblok>
             <div className="flex flex-col items-center gap-6">
                 <CtaKnap onClick={() => navigate("/intro")}>
                     START REJSEN
