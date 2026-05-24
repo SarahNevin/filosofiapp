@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     },
     {
     path: "intro",
-    element: <IntroSliderView />,
+    element: <VaelgEmneView />,
     },
     {
     path: "emne",

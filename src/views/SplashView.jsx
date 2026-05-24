@@ -14,7 +14,7 @@ export default function SplashView() {
   }, [navigate]);
 
   return (
-    <div classname="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen">
         <h1>Sofies Verden</h1>
         <img
             src={GyldendalLogo}
