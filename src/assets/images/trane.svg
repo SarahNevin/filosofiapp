@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 640 640">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .st1 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .st2 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .st3 {
+        filter: url(#drop-shadow-9);
+      }
+
+      .st4 {
+        filter: url(#drop-shadow-6);
+      }
+
+      .st5 {
+        filter: url(#drop-shadow-7);
+      }
+
+      .st6 {
+        filter: url(#drop-shadow-8);
+      }
+
+      .st7 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .st8 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .st9 {
+        fill: none;
+      }
+
+      .st9, .st10 {
+        stroke: #b86f00;
+        stroke-miterlimit: 10;
+      }
+
+      .st11, .st10 {
+        fill: #ffb703;
+      }
+
+      .st12 {
+        filter: url(#drop-shadow-20);
+      }
+
+      .st13 {
+        filter: url(#drop-shadow-21);
+      }
+
+      .st14 {
+        filter: url(#drop-shadow-13);
+      }
+
+      .st15 {
+        filter: url(#drop-shadow-16);
+      }
+
+      .st16 {
+        filter: url(#drop-shadow-19);
+      }
+
+      .st17 {
+        filter: url(#drop-shadow-14);
+      }
+
+      .st18 {
+        filter: url(#drop-shadow-18);
+      }
+
+      .st19 {
+        filter: url(#drop-shadow-17);
+      }
+
+      .st20 {
+        filter: url(#drop-shadow-12);
+      }
+
+      .st21 {
+        filter: url(#drop-shadow-11);
+      }
+
+      .st22 {
+        filter: url(#drop-shadow-10);
+      }
+
+      .st23 {
+        filter: url(#drop-shadow-15);
+      }
+
+      .st10 {
+        stroke-width: 2px;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="260" y="341" width="340" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" x="242" y="302" width="155" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur1" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur1" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" x="326" y="77" width="95" height="289" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur2" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" x="255" y="416" width="134" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur3" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" x="255" y="423" width="81" height="89" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur4" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" x="178" y="226" width="94" height="277" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur5" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-7" x="59" y="215" width="169" height="285" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur6" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-8" x="124" y="193" width="96" height="118" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur7" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-9" x="230" y="282" width="94" height="70" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur8" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur8" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-10" x="62" y="217" width="103" height="181" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur9" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur9" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-11" x="253.06" y="441.88" width="0" height="2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur10" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur10" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-12" x="328" y="86" width="92" height="266" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur11" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur11" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-13" x="334" y="341" width="262" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur12" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur12" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-14" x="268.12" y="386.22" width="0" height="2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur13" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur13" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-15" x="361.2" y="341.03" width="0" height="2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur14" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur14" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-16" x="181" y="203" width="25" height="24" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur15" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur15" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-17" x="139.03" y="294.8" width="0" height="2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur16" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur16" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-18" x="218.13" y="211.06" width="0" height="2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur17" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur17" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-19" x="127" y="202" width="165" height="299" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur18" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur18" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-20" x="198" y="200" width="22" height="22" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur19" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur19" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-21" x="188" y="226" width="21" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur result="blur20" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur20" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_23">
+    <g class="st0">
+      <path class="st10" d="M387.01,358.47c8.75-2.42,25.41-7.23,32-8.97,17.11,2.28,53.89,6.87,78.79,10.13,21.89,2.74,83.62,10.81,92.05,11.84.05,0,.08.02.07.05,0,.05-.16.18-.57.51-2.35,1.87-10.59,8.38-13.43,10.5-38.59,8.56-214.72,47.52-249.39,55.2-1.87.32-2.76.83-3.97.72-2.31-.72-28.48-8.93-42.25-13.25-4.37-1.45-6.92-2.05-8.39-2.69,1.13-.67,55.39-30.83,88.93-49.51,14.66-8.13,24.89-13.9,26.12-14.51h.03Z"/>
+    </g>
+  </g>
+  <g id="Layer_22">
+    <g class="st2">
+      <path class="st10" d="M312.94,310.5c16.35,10.47,70.62,45.75,73.86,47.83.31.21.18.22-.2.5-4.46,3.02-8.7,5.92-15.03,10.22-10.47,7.12-24.1,16.38-33.78,22.96-4.02,2.43-65.21,34.42-73.07,38.66-.91.44-.81.69-.71-.96.6-11.55,2.86-38.39,2.7-43.63-5.04-16.27-10.82-33.1-14.32-47.09,3.83-2.06,46.49-21.87,60.53-28.48h.02Z"/>
+    </g>
+  </g>
+  <g id="Layer_21">
+    <g class="st1">
+      <path class="st10" d="M336.3,323.51c6.43-21.19,27.65-89.03,38.1-122.81,8.2-25.21,33.06-108.55,35.33-112.65.18,1.98.89,9.88.94,13.82-1.45,64.54-29.12,249.22-29.35,251.09-7.63-4.85-41.42-27.12-45.02-29.44h-.01Z"/>
+    </g>
+  </g>
+  <g id="Layer_20">
+    <g class="st8">
+      <path class="st10" d="M369.18,455.15c1.15-3.31,3.4-10.41,4.86-15,1.63-5.48,3.56-9.33,4.53-13.53-3.56.75-34.8,7.99-48.24,11.29-2.71.67-4.62,1.16-5.44,1.35-.62.08-1.04-.09-1.74-.28-14.24-4.64-28.55-9.44-42.81-14.07-1.75-.56-3.54-.25-5.08.69-2.98,1.8-6.25,3.48-9.06,5.4,4.04,3.6,40.58,23.63,54.11,31.86,5.01-.54,44.82-6.87,48.85-7.67l.02-.03Z"/>
+    </g>
+  </g>
+  <g id="Layer_19">
+    <g class="st7">
+      <path class="st10" d="M265.2,499.03c-.02.35-.25.11,0,0,17.31-10.43,48.29-30.77,58.25-35.48,2.03-.93,3.68-1.89,1.49-3.23-15.83-9.33-31.77-18.61-47.61-27.86-1.35-.76-2.45-.75-2.87.98-3.96,21.84-5.43,43.79-9.26,65.59h0Z"/>
+    </g>
+  </g>
+  <g id="Layer_18">
+    <g class="st4">
+      <path class="st10" d="M261.36,472.41c-.4.76-1.47,1.29-2.34,1.63-13.33,5.53-26.75,11.12-40.04,16.62-3.4-4.38-26.14-227.51-30.18-254.34,1.52-.67,3.54-.88,6.24-1.63,1.3-.34,3.16-1.01,3.97-.01,21.74,78.76,43.87,158.21,62.42,237.6l-.07.13Z"/>
+    </g>
+  </g>
+  <g id="Layer_17">
+    <g class="st5">
+      <path class="st10" d="M193.54,282.87c-30.11-13.13-101.45-48.02-123.53-58.87.02.13,3.49,6.6,8.92,16.88,19.4,36.53,74.75,141.19,76.83,144.89,5.05,3.31,17.27,11.07,23.9,15.34.82.48,1.18.89,1.62,1.69,1.67,2.79,6.33,10.55,8.27,13.83,1.58,3.75,21.36,53.47,27.9,69.79.23-.43-19.29-164.18-23.91-203.55h-.01Z"/>
+    </g>
+  </g>
+  <g id="Layer_16">
+    <g class="st6">
+      <path class="st10" d="M198.99,232.35c-10.89,12.52-34.19,35.71-47.72,49.69-8.7,8.86-15.43,15.69-16.54,16.81-.06.06-.09.07-.07.01.03-.11.26-.51.61-1.11,11.26-18.63,41.7-75.23,53.68-91.97,2.59-1.43,5.63-2.41,8.33-3.59,1.22-.54,2.5-.71,3.66.06,1.89,1.18,4.75,3.19,6.38,4.31,1.06.74,1.75,1.77,2.21,2.96"/>
+    </g>
+  </g>
+  <g id="Layer_15">
+    <g class="st3">
+      <path class="st10" d="M240.27,290.88c-.22,0-.19.21-.16.41,2.42,9.74,6.68,26.85,9.35,37.58,1.08,4.35,1.95,7.83,2.37,9.5.25.78.14,1.28.56,1.11,3.29-1.62,58.87-28.94,59.5-29.3-.71-.33-1.64-.41-3.32-.88-19.55-5.06-50.23-12.25-68.27-18.42h-.04Z"/>
+    </g>
+  </g>
+  <g id="Layer_14">
+    <g class="st22">
+      <path class="st10" d="M146.53,322.71l-1.68-3.22c-16.44-21.65-47.17-61.24-65.57-85.49-2.59-3.42-5.27-6.73-6.82-8.77-1-2.22,52.73,121.99,54.67,126.58.25.63.43.94,1.25,2.85,2.42,5.21,6.16,14.53,7.7,17.15,2.21,1.83,4.41,3.49,7.05,5.59,3.31,2.61,6.7,5.28,9.96,7.86,1.19.94,1,.91,1.7-.31"/>
+    </g>
+    <polyline class="st10" points="146.04 321.84 183.02 404.62 153.09 385.27"/>
+    <line class="st10" x1="150.45" y1="383.26" x2="153.71" y2="385.64"/>
+  </g>
+  <g id="Layer_13">
+    <g class="st21">
+      <path class="st10" d="M253.06,441.88"/>
+    </g>
+  </g>
+  <g id="Layer_12">
+    <g class="st20">
+      <path class="st10" d="M407.83,105.93c-10.95,54.7-35.54,181.61-46.58,232.86-1.77-1.11-19.31-11.84-23.15-14.26-2.53-2.61,71.87-228.85,70.92-229.47l-1.19,10.88Z"/>
+    </g>
+  </g>
+  <g id="Layer_11">
+    <g class="st14">
+      <path class="st10" d="M585.18,371.7c.08-.12-236.9,18.04-238.93,17.85.36-.28,2.12-1.61,4.77-3.62,10.23-7.73,27.14-20.59,36.32-27.5,3.48-1.3,22.88-6.82,29.42-8.86,1.09-.31,1.4-.46,1.97-.56,37.24,5.06,166.51,22.69,166.44,22.69h0Z"/>
+    </g>
+  </g>
+  <g id="Layer_10">
+    <g class="st17">
+      <path class="st10" d="M268.12,386.22"/>
+    </g>
+  </g>
+  <g id="Layer_9">
+    <g class="st23">
+      <path class="st10" d="M361.2,341.03"/>
+    </g>
+  </g>
+  <g id="Layer_8">
+    <g class="st15">
+      <path class="st10" d="M195.72,212.88c-.18,1.99-4,1.77-3.77-.23.32-1.8,3.59-1.68,3.77.11v.13Z"/>
+    </g>
+  </g>
+  <g id="Layer_7">
+    <g class="st19">
+      <path class="st10" d="M139.03,294.8"/>
+    </g>
+  </g>
+  <g id="Layer_6">
+    <g class="st18">
+      <path class="st10" d="M218.13,211.06"/>
+    </g>
+  </g>
+  <g id="Layer_5">
+    <g class="st16">
+      <path class="st10" d="M198.88,231.82c4,23.14,27.91,102.52,36.89,138.1,15.07,59.66,29.27,116.51,31.34,118.17.11.09.11-.84.26-2.02,3.26-24.65,10.93-80.53,14.53-107.71-16.07-57.38-43.05-112.87-64.16-168.15-.41-.17-.92-.22-1.41-.17-2.85.26-9.45.95-11.64,1.17-1,.18-1.13,0-1.51.39-2.47,3-33.78,40.95-52.83,64.05-8.69,10.54-13.13,19.63-12.58,19.67,1.96.14,58.83-60.09,61.09-63.49h0Z"/>
+    </g>
+  </g>
+  <g id="Layer_4">
+    <g class="st12">
+      <path class="st10" d="M209.91,210.19s-1.24-2.32-1.24-2.33"/>
+    </g>
+  </g>
+  <g id="Layer_3">
+    <g class="st13">
+      <path class="st10" d="M198.89,233.82l-.19-.37.19.37Z"/>
+    </g>
+  </g>
+  <g id="Layer_2">
+    <ellipse class="st11" cx="193.85" cy="212.66" rx="2.11" ry="1.67"/>
+    <ellipse class="st9" cx="193.85" cy="212.66" rx="2.11" ry="1.67"/>
+  </g>
+</svg>
