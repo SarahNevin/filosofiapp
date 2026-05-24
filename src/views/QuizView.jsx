@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
@@ -7,6 +8,7 @@ import LydIkon from "../assets/images/lyd.svg";
 
 export default function QuizView() {
   const [popupVisible, setPopupVisible] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen pb-[91px]">
@@ -39,24 +41,24 @@ export default function QuizView() {
 
             {/* Hint-knapper i layover */}
             <div className="pt-6">
-            <div className="flex flex-col gap-5">
-              <CtaKnap>
-                <span className="flex items-center gap-3">
-                  <img src={LydIkon} alt="" className="w-7 h-7" />
-                  <span>Hvad tænker Ida, 11 år?</span>
-                </span>
-              </CtaKnap>
+              <div className="flex flex-col gap-5">
+                <CtaKnap>
+                  <span className="flex items-center gap-3">
+                    <img src={LydIkon} alt="" className="w-7 h-7" />
+                    <span>Hvad tænker Ida, 11 år?</span>
+                  </span>
+                </CtaKnap>
 
-              <CtaKnap>Få historien fortalt igen</CtaKnap>
+                <CtaKnap onClick={() => navigate("/historie")}>
+                  Få historien fortalt igen
+                </CtaKnap>
+              </div>
+
+              {/* Hint */}
+              <p className="mt-6 px-6 text-center">
+                Hint: Find svaret i Sofies Verden s. 122, andet afsnit
+              </p>
             </div>
-
-            {/* Hint */}
-            <p
-              className="mt-6 text-center"
-            >
-              Hint: Find svaret i Sofies Verden s. 122, andet afsnit
-            </p>
-          </div>
           </div>
         </div>
       )}
