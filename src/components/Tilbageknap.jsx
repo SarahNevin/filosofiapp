@@ -7,7 +7,7 @@ export default function Tilbageknap() {
   return (
     <button
       onClick={() => navigate(-1)}
-      className="absolute top-1/2 left-6 -translate-y-1/2 w-11 h-11 items-center justify-center"
+      className="absolute top-1/2 left-4 -translate-y-1/2 w-11 h-11 flex items-center justify-center"
     >
       <img src={Tilbagepil} alt="Tilbage" className="w-[14px] h-[25px]" />
     </button>
