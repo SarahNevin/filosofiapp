@@ -2,80 +2,98 @@
 
 /* Globale styles */
 
-html, body {
-    margin: 0;
-    background: #000000;
-    min-height: 100%;
+html,
+body {
+  margin: 0;
+  background: #000000;
+  min-height: 100%;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    font-family: "source-sans-3", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-family: "source-sans-3", sans-serif;
 }
 
 #root {
-    width: 100%;
-    max-width: 393px;
-    min-height: 100vh;
-    background: #000000;
-    color: #f3e9dc;
-        position: relative;
-    overflow: hidden;
+  width: 100%;
+  max-width: 393px;
+  min-height: 100vh;
+  background: #000000;
+  color: #f3e9dc;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Typografi */
 
 h1 {
-    font-family: "faunces", serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 120%;
+  font-family: "faunces", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 h2 {
-    font-family: "faunces", serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 120%;
+  font-family: "faunces", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 h3 {
-    font-family: "cormorant-garamond", serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 120%;
+  font-family: "cormorant-garamond", serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 p {
-    font-family: "source-sans-3", sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 150%;
+  font-family: "source-sans-3", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /* Andre typer tekst */
 
 .CTA-tekst {
-    font-family: "cormorant-garamond", serif;
-    font-size: 26px;
-    font-weight: 700;
+  font-family: "cormorant-garamond", serif;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .progress-tekst {
-    font-size: 21px;
-    line-height: 200%;
-    color: #FFB703;
+  font-size: 21px;
+  line-height: 200%;
+  color: #ffb703;
 }
 
 .spoergsmaal-tekst {
-    font-size: 24px;
-    line-height: 150%;
+  font-size: 24px;
+  line-height: 150%;
 }
 
 .navbar-tekst {
-    font-family: "cormorant-garamond", serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #B4B0B0;
+  font-family: "cormorant-garamond", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #b4b0b0;
+}
+
+/* Animation af trane på quiz-side til at indikere klikbarhed */
+@keyframes traneAnimation {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.03);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animer-trane {
+  animation: traneAnimation 2.5s ease-in-out infinite;
 }
