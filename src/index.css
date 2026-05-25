@@ -48,7 +48,7 @@ h3 {
   line-height: 120%;
 }
 
-p {
+p, li {
   font-family: "source-sans-3", sans-serif;
   font-size: 19px;
   font-weight: 400;

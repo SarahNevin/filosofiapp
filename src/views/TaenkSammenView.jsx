@@ -57,7 +57,7 @@ export default function TaenkSammenView() {
 
       {/* Tekstblok 2 */}
       <Tekstblok title="Overvej dette" level="h2">
-        <ul className="space-y-3 list-disc">
+        <ul className="space-y-2 list-disc">
           <li>Hvem afgør, hvad der er sandt?</li>
           <li>Hvorfor kan nye idéer være svære at acceptere?</li>
           <li>Kan man stole på sine sanser?</li>
