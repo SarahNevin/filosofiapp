@@ -1,9 +1,37 @@
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
+import ScrollableSlider from "../components/ScrollableSlider";
+import LessonCard from "../components/LessonCard";
 import platonHule from "../assets/images/platons-hule.webp";
+import oplevFortaellingen from "../assets/images/oplev-fortaellingen.png";
+import testDinForstaelse from "../assets/images/test-din-forstaelse.png";
+import klassequiz from "../assets/images/klassequiz.png";
+import taenkSammen from "../assets/images/taenk-sammen.png";
 import Guidetekst from "../components/Guidetekst";
 
 export default function EmneView() {
+  const lessons = [
+    {
+      title: "Oplev fortællingen",
+      image: oplevFortaellingen,
+    },
+
+    {
+      title: "Test din forståelse",
+      image: testDinForstaelse,
+    },
+
+    {
+      title: "Quiz i klassen",
+      image: klassequiz,
+    },
+
+    {
+      title: "Tænk sammen – rollespil",
+      image: taenkSammen,
+    },
+  ];
+
   return (
     <div className="min-h-screen pb-[91px]">
       <ScreenHeader
@@ -25,7 +53,18 @@ export default function EmneView() {
         “Hvis alle tror noget er sandt, er det så sandt?”
       </Guidetekst>
 
-      <Navigation />
+      {/* Slider */}
+      <div className="mt-8">
+        <ScrollableSlider>
+          {lessons.map((lesson, index) => (
+            <div key={index} className="w-[332px] h-[300px] flex-shrink-0">
+              <LessonCard title={lesson.title} image={lesson.image} />
+            </div>
+          ))}
+        </ScrollableSlider>
+
+        <Navigation />
+      </div>
     </div>
   );
 }
