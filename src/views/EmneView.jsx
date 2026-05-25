@@ -14,11 +14,13 @@ export default function EmneView() {
     {
       title: "Oplev fortællingen",
       image: oplevFortaellingen,
+      link: "/historie",
     },
 
     {
       title: "Test din forståelse",
       image: testDinForstaelse,
+      link: "/quiz",
     },
 
     {
@@ -29,6 +31,7 @@ export default function EmneView() {
     {
       title: "Tænk sammen – rollespil",
       image: taenkSammen,
+      link: "/taenk-sammen",
     },
   ];
 
@@ -58,7 +61,7 @@ export default function EmneView() {
         <ScrollableSlider>
           {lessons.map((lesson, index) => (
             <div key={index} className="w-[332px] h-[300px] flex-shrink-0">
-              <LessonCard title={lesson.title} image={lesson.image} />
+              <LessonCard title={lesson.title} image={lesson.image} link={lesson.link} />
             </div>
           ))}
         </ScrollableSlider>
