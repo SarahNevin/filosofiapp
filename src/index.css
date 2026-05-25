@@ -105,3 +105,14 @@ p {
 .animer-trane {
   animation: traneAnimation 2.5s ease-in-out infinite;
 }
+
+/* Chrome, Safari, Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
