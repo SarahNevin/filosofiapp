@@ -10,7 +10,7 @@ export default function ScreenHeader({
 
   return (
     <header
-      className={`pt-16 flex flex-col items-center mb-20 ${isHeading1 ? "gap-7" : "gap-3"}`}
+      className={`pt-16 flex flex-col items-center ${isHeading1 ? "gap-7" : "gap-3"}`}
     >
       <h3>{tagline}</h3>
 
