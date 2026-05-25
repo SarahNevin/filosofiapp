@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function LessonCard({ title, image, link }) {
+function ContentCard({ title, image, link }) {
   return (
     <Link to={link} className="block w-[332px] h-[300px]">
     <div className="w-full h-full overflow-hidden relative rounded-b-[12px]">
@@ -17,4 +17,4 @@ function LessonCard({ title, image, link }) {
   );
 }
 
-export default LessonCard;
+export default ContentCard;

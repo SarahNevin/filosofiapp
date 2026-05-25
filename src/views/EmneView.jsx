@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
 import ScrollableSlider from "../components/ScrollableSlider";
-import LessonCard from "../components/LessonCard";
+import ContentCard from "../components/ContentCard";
 import platonHule from "../assets/images/platons-hule.webp";
 import oplevFortaellingen from "../assets/images/oplev-fortaellingen.png";
 import testDinForstaelse from "../assets/images/test-din-forstaelse.png";
@@ -61,7 +61,7 @@ export default function EmneView() {
         <ScrollableSlider>
           {lessons.map((lesson, index) => (
             <div key={index} className="w-[332px] h-[300px] flex-shrink-0">
-              <LessonCard title={lesson.title} image={lesson.image} link={lesson.link} />
+              <ContentCard title={lesson.title} image={lesson.image} link={lesson.link} />
             </div>
           ))}
         </ScrollableSlider>
