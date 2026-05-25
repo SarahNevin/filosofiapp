@@ -106,6 +106,7 @@ p {
   animation: traneAnimation 2.5s ease-in-out infinite;
 }
 
+/* Skjul scrollbar */
 /* Chrome, Safari, Edge */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
