@@ -1,13 +1,20 @@
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
 import Guidetekst from "../components/Guidetekst";
 import Tekstblok from "../components/Tekstblok";
+import quizData from "../data/quizData";
 
 export default function QuizResultatView() {
-     const navigate = useNavigate();
+    const location = useLocation();
+    const xp = location.state?.xp || 0;
+    const maxXp =  quizData.length * 25;
+    const percent = (xp / maxXp) * 100;
+
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen pb-[91px]">
       <ScreenHeader
@@ -25,17 +32,17 @@ export default function QuizResultatView() {
 
           {/* Progressbar */}
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
-            <div className="h-full w-[75%] bg-[#ffb703]"></div>
+            <div className="h-full bg-[#ffb703]" style={{ width: `${percent}%` }} />
           </div>
 
-          <p className="text-center mt-2">75XP / 100XP</p>
+          <p className="text-center mt-2">{xp}XP / {maxXp}XP</p>
         </div>
       </div>
 
             {/* RESULTAT */}
       <Tekstblok title="Quiz gennemført" level="h1">
         <p>
-          Godt gået! Du fik 125 point og er kommet tættere på at forstå
+          Godt gået! Du fik {xp} point og er kommet tættere på at forstå
           Platons idéer.
         </p>
       </Tekstblok>

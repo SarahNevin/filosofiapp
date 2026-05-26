@@ -27,16 +27,16 @@ export default function QuizIntroView() {
           </p>
 
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
-            <div className="h-full w-[75%] bg-[#ffb703]"></div>
+            <div className="h-full w-[0%] bg-[#ffb703]"></div>
           </div>
 
-          <p className="text-center mt-2">75XP / 100XP</p>
+          <p className="text-center mt-2">0XP / 125XP</p>
         </div>
       </div>
 
       {/* CONTENT */}
       <div>
-        <Tekstblok title="Klar til quiz" level="h1">
+        <Tekstblok title="Klar til quiz?" level="h1">
           <p>
             Vælg mellem 3 svar og se, hvor meget du husker fra fortællingen.
           </p>
