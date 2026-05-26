@@ -54,7 +54,7 @@ const quizData = [
   },
 
   {
-    question: "Hvad repræsenterer solen uden for hulen?",
+    question: "Hvad repræsenterer solen uden for?",
     answers: [
       {
         text: "Viden og indsigt",
@@ -73,7 +73,7 @@ const quizData = [
 
   {
     question:
-      "Hvordan reagerer fangerne, når nogen fortæller om verden udenfor?",
+      "Hvordan reagerer fangerne?",
     answers: [
       {
         text: "De bliver nysgerrige og følger med",
