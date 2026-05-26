@@ -14,10 +14,21 @@ export default function QuizView() {
 
   const [popupVisible, setPopupVisible] = useState(false);
   const navigate = useNavigate();
+  const [xp, setXp] = useState(0);
 
   function handleAnswer(answer) {
     console.log("Valgt svar:", answer);
+    if (answer.Correct) {
+      setXp(xp + 25);
+    }
+    const next = currentQuestion + 1;
+
+  if (next < quizData.length) {
+    setCurrentQuestion(next);
+  } else {
+    navigate("/quiz/resultat", { state: { xp } });
   }
+}
 
   return (
     <div className="min-h-screen pb-[91px]">
@@ -36,7 +47,11 @@ export default function QuizView() {
 
           {/* Progressbar */}
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
-            <div className="h-full w-[75%] bg-[#ffb703]"></div>
+            <div
+className="h-full bg-[#ffb703]"
+  style={{ width: `${((currentQuestion + 1) / quizData.length) * 100}%`,
+  }}
+></div>
           </div>
 
           <p className="text-center mt-2">75XP / 100XP</p>
@@ -72,7 +87,7 @@ export default function QuizView() {
       {/* Popup ved klik på trane */}
       {popupVisible && (
         <div
-          className=" fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-6"
+          className=" fixed inset-0 z-50 flex items-center justify-center bg-black/85 px-6"
           onClick={() => setPopupVisible(false)}
         >
           <div
