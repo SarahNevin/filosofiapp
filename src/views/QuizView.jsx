@@ -4,6 +4,7 @@ import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
+import Tekstblok from "../components/Tekstblok";
 import Guidetekst from "../components/Guidetekst";
 import LydIkon from "../assets/images/lyd.svg";
 
@@ -13,18 +14,14 @@ export default function QuizView() {
 
   return (
     <div className="min-h-screen pb-[91px]">
-
-            <ScreenHeader
-              tagline="Test din forståelse"
-              title="Platons hule"
-              level="h2"
-              visTilbageknap={true}
-            />
-
+      <ScreenHeader
+        tagline="Test din forståelse"
+        title="Platons hule"
+        level="h2"
+        visTilbageknap={true}
+      />
 
       <div className="px-5 mt-6">
-
-        {/* LEVEL + XP */}
         <div className="mb-6">
           <p className="progress-tekst text-center mb-2">
             Level 2 – Spirende filosof
@@ -35,65 +32,75 @@ export default function QuizView() {
             <div className="h-full w-[75%] bg-[#ffb703]"></div>
           </div>
 
-          <p className="text-center mt-2">
-            75XP / 100XP
+          <p className="text-center mt-2">75XP / 100XP</p>
+        </div>
+      </div>
+
+      <div>
+        <Tekstblok title="Klar til quiz" level="h1">
+          <p>
+            Vælg mellem 3 svar og se, hvor meget du husker fra fortællingen.
           </p>
+          <p>Brug Ori til at få hints, og saml point undervejs.</p>
+        </Tekstblok>
+
+        {/* Guidetekst med klikbar trane for hint */}
+        <Guidetekst
+          kanKlikkes={true}
+          animated={true}
+          onBirdClick={() => setPopupVisible(true)}
+        >
+          “Tryk på mig, hvis du vil have et hint.”
+        </Guidetekst>
+
+<div className="flex justify-center">
+        <CtaKnap onClick={() => navigate("/historie")}>Start quiz</CtaKnap>
         </div>
 
-
-      {/* Guidetekst med klikbar trane for hint */}
-      <Guidetekst
-        kanKlikkes={true}
-        animated={true}
-        onBirdClick={() => setPopupVisible(true)}
-      >
-        “Tryk på mig, hvis du vil have et hint.”
-      </Guidetekst>
-
-      {/* Popup ved klik på trane */}
-      {popupVisible && (
-        <div
-          className=" fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-6"
-          onClick={() => setPopupVisible(false)}
-        >
+        {/* Popup ved klik på trane */}
+        {popupVisible && (
           <div
-            className="relative w-full max-w-[320px] rounded-[20px] px-4 py-14 pb-10"
-            onClick={(e) => e.stopPropagation()}
+            className=" fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-6"
+            onClick={() => setPopupVisible(false)}
           >
-            {/* Luk-knap */}
-            <button
-              onClick={() => setPopupVisible(false)}
-              className="absolute top-4 right-4 text-5xl text-[#B4B0B0]"
+            <div
+              className="relative w-full max-w-[320px] rounded-[20px] px-4 py-14 pb-10"
+              onClick={(e) => e.stopPropagation()}
             >
-              x
-            </button>
+              {/* Luk-knap */}
+              <button
+                onClick={() => setPopupVisible(false)}
+                className="absolute top-4 right-4 text-5xl text-[#B4B0B0]"
+              >
+                x
+              </button>
 
-            {/* Hint-knapper i layover */}
-            <div className="pt-6">
-              <div className="flex flex-col gap-5">
-                <CtaKnap>
-                  <span className="flex items-center gap-3">
-                    <img src={LydIkon} alt="" className="w-7 h-7" />
-                    <span>Hvad tænker Ida, 11 år?</span>
-                  </span>
-                </CtaKnap>
+              {/* Hint-knapper i layover */}
+              <div className="pt-6">
+                <div className="flex flex-col gap-5">
+                  <CtaKnap>
+                    <span className="flex items-center gap-3">
+                      <img src={LydIkon} alt="" className="w-7 h-7" />
+                      <span>Hvad tænker Ida, 11 år?</span>
+                    </span>
+                  </CtaKnap>
 
-                <CtaKnap onClick={() => navigate("/historie")}>
-                  Få historien fortalt igen
-                </CtaKnap>
+                  <CtaKnap onClick={() => navigate("/historie")}>
+                    Få historien fortalt igen
+                  </CtaKnap>
+                </div>
+
+                {/* Hint */}
+                <p className="mt-6 px-6 text-center">
+                  Hint: Find svaret i Sofies Verden s. 122, andet afsnit
+                </p>
               </div>
-
-              {/* Hint */}
-              <p className="mt-6 px-6 text-center">
-                Hint: Find svaret i Sofies Verden s. 122, andet afsnit
-              </p>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <Navigation />
-    </div>
+        <Navigation />
+      </div>
     </div>
   );
 }
