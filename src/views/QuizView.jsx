@@ -9,11 +9,15 @@ import Guidetekst from "../components/Guidetekst";
 import LydIkon from "../assets/images/lyd.svg";
 
 export default function QuizView() {
-  const [currentQuestion] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   const question = quizData[currentQuestion];
 
   const [popupVisible, setPopupVisible] = useState(false);
   const navigate = useNavigate();
+
+  function handleAnswer(answer) {
+    console.log("Valgt svar:", answer);
+  }
 
   return (
     <div className="min-h-screen pb-[91px]">
@@ -49,6 +53,7 @@ export default function QuizView() {
           <button
             key={index}
             className="border border-[#F3E9DC] p-4 rounded-xl shadow"
+            onClick={() => handleAnswer(answer)}
           >
             {answer.text}
           </button>
