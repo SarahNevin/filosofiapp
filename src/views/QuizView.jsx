@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
+import ScreenHeader from "../components/ScreenHeader";
 import Guidetekst from "../components/Guidetekst";
 import LydIkon from "../assets/images/lyd.svg";
 
@@ -12,6 +13,34 @@ export default function QuizView() {
 
   return (
     <div className="min-h-screen pb-[91px]">
+
+            <ScreenHeader
+              tagline="Test din forståelse"
+              title="Platons hule"
+              level="h2"
+              visTilbageknap={true}
+            />
+
+
+      <div className="px-5 mt-6">
+
+        {/* LEVEL + XP */}
+        <div className="mb-6">
+          <p className="progress-tekst text-center mb-2">
+            Level 2 – Spirende filosof
+          </p>
+
+          {/* Progressbar */}
+          <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
+            <div className="h-full w-[75%] bg-[#ffb703]"></div>
+          </div>
+
+          <p className="text-center mt-2">
+            75XP / 100XP
+          </p>
+        </div>
+
+
       {/* Guidetekst med klikbar trane for hint */}
       <Guidetekst
         kanKlikkes={true}
@@ -64,6 +93,7 @@ export default function QuizView() {
       )}
 
       <Navigation />
+    </div>
     </div>
   );
 }
