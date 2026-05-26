@@ -2,13 +2,15 @@ import { useState } from "react";
 import PageSlider from "../components/PageSlider";
 import ScreenHeader from "../components/ScreenHeader";
 import Navigation from "../components/Navigation";
-import platonHule from "../assets/images/test-din-forstaelse.png";
+import ideernesVerden from "../assets/images/ideernes-verden.png";
+import hulelignelsen from "../assets/images/hulelignelsen.png";
+import filosofistaten from "../assets/images/filosofistaten.png";
 
 export default function VaelgEmneView() {
   const screens = [
-    { title: "Idéernes verden", image: platonHule },
-    { title: "Ud af hulen", image: platonHule },
-    { title: "Idéernes verden", image: platonHule },
+    { title: "Idéernes verden", image: ideernesVerden },
+    { title: "Ud af hulen", image: hulelignelsen },
+    { title: "Filosofistaten", image: filosofistaten },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
