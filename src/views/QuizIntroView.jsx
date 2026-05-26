@@ -6,7 +6,7 @@ import ScreenHeader from "../components/ScreenHeader";
 import Tekstblok from "../components/Tekstblok";
 import Guidetekst from "../components/Guidetekst";
 
-export default function QuizView() {
+export default function QuizIntroView() {
   const navigate = useNavigate();
 
   return (
@@ -44,12 +44,12 @@ export default function QuizView() {
         </Tekstblok>
 
         {/* GUIDETEKST (nu uden klik + uden popup) */}
-        <Guidetekst kanKlikkes={false} animated={false}>
-          “Ori hjælper dig undervejs i quizzen.”
+        <Guidetekst kanKlikkes={false}>
+          Hints koster ikke point, men måske afslører jeg lidt for meget ...”
         </Guidetekst>
 
         {/* CTA */}
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center my-6">
           <CtaKnap onClick={() => navigate("/quiz/start")}>
             Start quiz
           </CtaKnap>
