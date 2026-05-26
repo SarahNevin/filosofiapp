@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import PageSlider from "../components/PageSlider";
 import ScreenHeader from "../components/ScreenHeader";
 import Navigation from "../components/Navigation";
@@ -15,6 +17,8 @@ export default function VaelgEmneView() {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const navigate = useNavigate();
+
   return (
     <div className="h-dvh flex flex-col overflow-hidden bg-black">
       <ScreenHeader
@@ -27,7 +31,15 @@ export default function VaelgEmneView() {
       <main className="flex-1 min-h-0 overflow-hidden">
         <PageSlider onIndexChange={setActiveIndex}>
           {screens.map((screen, index) => (
-            <div key={index} className="relative w-full h-full">
+            <div
+              key={index}
+              className="relative w-full h-full"
+              onClick={() => {
+                if (index === 1) {
+                  navigate("/emne");
+                }
+              }}
+            >
               <img
                 src={screen.image}
                 alt={screen.title}
@@ -39,18 +51,18 @@ export default function VaelgEmneView() {
         </PageSlider>
       </main>
 
-    {/* Prikker */}
-    <div className="absolute bottom-26 left-1/2 -translate-x-1/2 flex justify-center gap-3 z-20">
-      {screens.map((_, index) => (
-        <div
-          key={index}
-          className={`w-3 h-3 rounded-full transition-opacity ${
-            activeIndex === index ? "opacity-100" : "opacity-30"
-          }`}
-          style={{ backgroundColor: "#F3E9DC" }}
-        />
-      ))}
-    </div>
+      {/* Prikker */}
+      <div className="absolute bottom-26 left-1/2 -translate-x-1/2 flex justify-center gap-3 z-20">
+        {screens.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full transition-opacity ${
+              activeIndex === index ? "opacity-100" : "opacity-30"
+            }`}
+            style={{ backgroundColor: "#F3E9DC" }}
+          />
+        ))}
+      </div>
 
       <Navigation />
     </div>
