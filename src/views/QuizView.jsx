@@ -4,7 +4,6 @@ import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
-import Tekstblok from "../components/Tekstblok";
 import Guidetekst from "../components/Guidetekst";
 import LydIkon from "../assets/images/lyd.svg";
 
@@ -36,14 +35,6 @@ export default function QuizView() {
         </div>
       </div>
 
-      <div>
-        <Tekstblok title="Klar til quiz" level="h1">
-          <p>
-            Vælg mellem 3 svar og se, hvor meget du husker fra fortællingen.
-          </p>
-          <p>Brug Ori til at få hints, og saml point undervejs.</p>
-        </Tekstblok>
-
         {/* Guidetekst med klikbar trane for hint */}
         <Guidetekst
           kanKlikkes={true}
@@ -52,10 +43,6 @@ export default function QuizView() {
         >
           “Tryk på mig, hvis du vil have et hint.”
         </Guidetekst>
-
-<div className="flex justify-center">
-        <CtaKnap onClick={() => navigate("/historie")}>Start quiz</CtaKnap>
-        </div>
 
         {/* Popup ved klik på trane */}
         {popupVisible && (
@@ -101,6 +88,5 @@ export default function QuizView() {
 
         <Navigation />
       </div>
-    </div>
   );
 }
