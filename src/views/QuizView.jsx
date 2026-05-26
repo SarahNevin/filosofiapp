@@ -52,7 +52,7 @@ export default function QuizView() {
           {/* Progressbar */}
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#ffb703]"
+              className="h-full bg-[#ffb703] transition-all duration-500"
               style={{width: `${(xp / maxXp) * 100}%`,
               }}
             ></div>
