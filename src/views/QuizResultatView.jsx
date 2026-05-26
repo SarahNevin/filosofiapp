@@ -57,7 +57,7 @@ export default function QuizResultatView() {
       </Tekstblok>
 
        <div className="flex justify-center my-6">
-        <CtaKnap onClick={() => navigate("/historie")}>
+        <CtaKnap onClick={() => navigate("/emne")}>
           Tilbage til emnet
         </CtaKnap>
       </div>
