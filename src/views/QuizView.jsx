@@ -15,20 +15,24 @@ export default function QuizView() {
   const [popupVisible, setPopupVisible] = useState(false);
   const navigate = useNavigate();
   const [xp, setXp] = useState(0);
+  const maxXp = quizData.length * 25;
 
   function handleAnswer(answer) {
     console.log("Valgt svar:", answer);
-    if (answer.Correct) {
-      setXp(xp + 25);
-    }
+
+    const isCorrect = answer.correct;
+    const newXp = xp + (isCorrect ? 25 : 0);
+
+    setXp(newXp);
+
     const next = currentQuestion + 1;
 
-  if (next < quizData.length) {
-    setCurrentQuestion(next);
-  } else {
-    navigate("/quiz/resultat", { state: { xp } });
+    if (next < quizData.length) {
+      setCurrentQuestion(next);
+    } else {
+      navigate("/quiz/resultat", { state: { xp: newXp } });
+    }
   }
-}
 
   return (
     <div className="min-h-screen pb-[91px]">
@@ -48,13 +52,15 @@ export default function QuizView() {
           {/* Progressbar */}
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
             <div
-className="h-full bg-[#ffb703]"
-  style={{ width: `${((currentQuestion + 1) / quizData.length) * 100}%`,
-  }}
-></div>
+              className="h-full bg-[#ffb703]"
+              style={{width: `${(xp / maxXp) * 100}%`,
+              }}
+            ></div>
           </div>
 
-          <p className="text-center mt-2">75XP / 100XP</p>
+          <p className="text-center mt-2">
+            Spørgsmål {currentQuestion + 1} / {quizData.length}
+          </p>
         </div>
       </div>
 
