@@ -14,6 +14,8 @@ export default function QuizResultatView() {
     const maxXp =  quizData.length * 25;
     const percent = (xp / maxXp) * 100;
 
+    const isGood = xp >= maxXp * 0.6;
+
   const navigate = useNavigate();
   return (
     <div className="min-h-screen pb-[91px]">
@@ -42,8 +44,9 @@ export default function QuizResultatView() {
             {/* RESULTAT */}
       <Tekstblok title="Quiz gennemført" level="h1">
         <p>
-          Godt gået! Du fik {xp} point og er kommet tættere på at forstå
-          Platons idéer.
+          {isGood
+    ? `Godt gået! Du fik ${xp} point og er kommet tættere på at forstå Platons idéer.`
+    : `Godt forsøgt! Du fik ${xp} point. Prøv igen, og forbedr dit resultat.`}
         </p>
       </Tekstblok>
 
