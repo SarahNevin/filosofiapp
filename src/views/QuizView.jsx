@@ -15,6 +15,7 @@ export default function QuizView() {
   const [popupVisible, setPopupVisible] = useState(false);
   const navigate = useNavigate();
   const [xp, setXp] = useState(0);
+  const [showXpAnimation, setShowXpAnimation] = useState(false);
   const maxXp = quizData.length * 25;
 
   function handleAnswer(answer) {
@@ -25,12 +26,20 @@ export default function QuizView() {
 
     setXp(newXp);
 
+    if (isCorrect) {
+      setShowXpAnimation(true);
+      setTimeout(() => setShowXpAnimation(false), 1000);
+    }
+
     const next = currentQuestion + 1;
 
     if (next < quizData.length) {
       setCurrentQuestion(next);
     } else {
-      navigate("/quiz/resultat", { state: { xp: newXp } });
+      // vent 1 sekund for at vise XP-animationen, før der navigeres til resultatet
+      setTimeout(() => {
+        navigate("/quiz/resultat", { state: { xp: newXp } });
+      }, 1000);
     }
   }
 
@@ -53,10 +62,15 @@ export default function QuizView() {
           <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
             <div
               className="h-full bg-[#ffb703] transition-all duration-500"
-              style={{width: `${(xp / maxXp) * 100}%`,
-              }}
+              style={{ width: `${(xp / maxXp) * 100}%` }}
             ></div>
           </div>
+
+          {showXpAnimation && (
+            <p className="text-center text-[#ffb703] font-bold animate-bounce mt-3">
+              +25 XP ✨
+            </p>
+          )}
 
           <p className="text-center mt-2">
             Spørgsmål {currentQuestion + 1} / {quizData.length}
