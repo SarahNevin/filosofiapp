@@ -16,7 +16,7 @@ export default function OnboardingView() {
         level="h1"
       />
 
-      <Tekstblok className="mt-20" title="Velkommen, tænker ..." level="h2">
+      <Tekstblok className="my-20" title="Velkommen, tænker ..." level="h2">
         <p>
           Dyk ned i fortællinger, idéer og filosofiske spørgsmål fra Sofies
           Verden ét tema ad gangen.

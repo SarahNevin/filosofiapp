@@ -35,7 +35,7 @@ export default function QuizResultatView() {
       />
 
             {/* RESULTAT */}
-      <Tekstblok title="Quiz gennemført" level="h1">
+      <Tekstblok className="mb-5" title="Quiz gennemført" level="h1">
         <p>
           {isGood
     ? `Godt gået! Du fik ${xp} point og er kommet tættere på at forstå Platons idéer.`
@@ -49,7 +49,7 @@ export default function QuizResultatView() {
       </Guidetekst>
 
       {/* REFLEKSION */}
-      <Tekstblok title="Refleksion" level="h2">
+      <Tekstblok className="mt-5" title="Refleksion" level="h2">
         <p>
           Tal med en klassekammerat, eller tænk selv over:
         </p>
@@ -59,7 +59,7 @@ export default function QuizResultatView() {
         </p>
       </Tekstblok>
 
-       <div className="flex justify-center my-6">
+       <div className="flex justify-center mt-10 mb-6">
         <CtaKnap onClick={() => navigate("/emne")}>
           Tilbage til emnet
         </CtaKnap>

@@ -33,7 +33,7 @@ export default function TaenkSammenView() {
       />
 
       {/* Tekstblok 1 */}
-      <Tekstblok title="Rollespil" level="h1">
+      <Tekstblok className="mt-20" title="Rollespil" level="h1">
         <p>
           Vælg en rolle og spil hulelignelsen sammen i klassen. Hvordan oplever
           I sandheden forskelligt?

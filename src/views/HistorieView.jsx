@@ -13,7 +13,7 @@ export default function HistorieView() {
         visTilbageknap={true}
       />
 
-      <div className="w-full flex justify-center mt-6">
+      <div className="w-full flex justify-center my-12">
         <img
           src={platonHule}
           alt="Platons hule"

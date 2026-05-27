@@ -13,7 +13,7 @@ export default function Guidetekst({
   );
 
   return (
-    <div className="mt-8 flex items-center justify-between pl-5">
+    <div className="flex items-center justify-between pl-5 mt-2">
       <p className="flex-1">{children}</p>
 
       {kanKlikkes && onBirdClick ? (
