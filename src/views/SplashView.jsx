@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import sofiesVerden from "../assets/images/sofies-verden-logo-hvid.svg";
 import GyldendalLogo from "../assets/images/gyldendal-logo.svg";  
 
 export default function SplashView() {
@@ -15,7 +16,10 @@ export default function SplashView() {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-        <h1>Sofies Verden</h1>
+          <img
+            src={sofiesVerden}
+            alt="Sofies Verden logo"
+        />
         <img
             src={GyldendalLogo}
             alt="Gyldendal logo"
