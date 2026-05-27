@@ -15,20 +15,23 @@ export default function OnboardingView() {
         title="Sofies Verden"
         level="h1"
       />
-      <Tekstblok title="Velkommen, tænker ..." level="h2">
+
+      <Tekstblok className="mt-20" title="Velkommen, tænker ..." level="h2">
         <p>
           Dyk ned i fortællinger, idéer og filosofiske spørgsmål fra Sofies
           Verden ét tema ad gangen.
         </p>
       </Tekstblok>
+
       <Guidetekst kanKlikkes={false}>
         “Hej! Jeg hedder Ori. Er du klar til at se verden på en ny måde sammen med
         mig?”
       </Guidetekst>
 
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 mt-12">
         <CtaKnap onClick={() => navigate("/intro")}>START REJSEN</CtaKnap>
       </div>
+
       <img
         src={GyldendalLogo}
         alt="Gyldendal logo"
