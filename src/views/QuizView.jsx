@@ -5,6 +5,7 @@ import quizData from "../data/quizData";
 
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
+import ProgressBar from "../components/ProgressBar";
 import Guidetekst from "../components/Guidetekst";
 import LydIkon from "../assets/images/lyd.svg";
 
@@ -52,31 +53,14 @@ export default function QuizView() {
         visTilbageknap={true}
       />
 
-      <div className="px-5 mt-6">
-        <div className="mb-6">
-          <p className="progress-tekst text-center mb-2">
-            Level 2 – Spirende filosof
-          </p>
-
-          {/* Progressbar */}
-          <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-[#ffb703] transition-all duration-500"
-              style={{ width: `${(xp / maxXp) * 100}%` }}
-            ></div>
-          </div>
-
-          {showXpAnimation && (
-            <p className="text-center text-[#ffb703] font-bold animate-bounce mt-3">
-              +25 XP ✨
-            </p>
-          )}
-
-          <p className="text-center mt-2">
-            Spørgsmål {currentQuestion + 1} / {quizData.length}
-          </p>
-        </div>
-      </div>
+      <ProgressBar
+        level="Level 2 – Spirende filosof"
+        xp={xp}
+        maxXp={maxXp}
+        percent={(xp / maxXp) * 100}
+        questionText ={`Spørgsmål ${currentQuestion + 1} / ${quizData.length}`}
+        showXpAnimation={showXpAnimation}
+      /> 
 
       {/* SPØRGSMÅL */}
       <h1 className="spoergsmaal-tekst text-center mb-3 px-5">

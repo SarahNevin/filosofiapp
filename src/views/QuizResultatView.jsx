@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { CtaKnap } from "../components/CtaKnap";
 
 import Navigation from "../components/Navigation";
 import ScreenHeader from "../components/ScreenHeader";
+import ProgressBar from "../components/ProgressBar";
 import Guidetekst from "../components/Guidetekst";
 import Tekstblok from "../components/Tekstblok";
 import quizData from "../data/quizData";
@@ -26,20 +26,13 @@ export default function QuizResultatView() {
         visTilbageknap={true}
       />
 
-      <div className="px-5 mt-6">
-        <div className="mb-6">
-          <p className="progress-tekst text-center mb-2">
-            Level 3 – Sandhedssøger
-          </p>
-
           {/* Progressbar */}
-          <div className="w-full h-3 bg-[#f3e9dc]/30 rounded-full overflow-hidden">
-            <div className="h-full bg-[#ffb703]" style={{ width: `${percent}%` }} />
-          </div>
-
-          <p className="text-center mt-2">{xp}XP / {maxXp}XP</p>
-        </div>
-      </div>
+    <ProgressBar
+        level="Level 2 – Spirende filosof"
+        xp={xp}
+        maxXp={maxXp}
+        percent={percent}
+      />
 
             {/* RESULTAT */}
       <Tekstblok title="Quiz gennemført" level="h1">
