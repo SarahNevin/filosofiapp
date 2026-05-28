@@ -8,7 +8,8 @@ export default function Navigation() {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full h-[91px] bg-[#151B22] flex justify-around items-center">
+    <nav className="fixed bottom-0 inset-x-0 h-[91px] flex justify-center">
+  <div className="w-full max-w-[393px] h-full bg-[#151B22] flex justify-around items-center">
       <button
         onClick={() => navigate("/onboarding")}
         className="flex flex-col items-center justify-center gap-1"
@@ -32,6 +33,7 @@ export default function Navigation() {
         <img src={profilIkon} alt="Profil" className="w-[25px] h-[25px]" />
         <span className="navbar-tekst">Profil</span>
       </button>
+    </div>
     </nav>
   );
 }
