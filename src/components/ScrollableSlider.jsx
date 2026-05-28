@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ScrollableSlider({ children }) {
+function ScrollableSlider({ title, children }) {
   const [activeDot, setActiveDot] = useState(0);
 
   function handleScroll(event) {
@@ -13,6 +13,10 @@ function ScrollableSlider({ children }) {
 
   return (
     <>
+    {title && (
+        <h2 className="pl-4 mb-4">{title}</h2>
+      )}
+
       {/* Slider */}
       <div
         onScroll={handleScroll}

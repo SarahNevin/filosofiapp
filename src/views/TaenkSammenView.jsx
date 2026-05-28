@@ -46,7 +46,7 @@ export default function TaenkSammenView() {
 
     {/* Slider med roller */}
       <div className="mt-8">
-        <ScrollableSlider>
+        <ScrollableSlider title="Roller">
           {roles.map((role, index) => (
             <div key={index} className="w-[332px] h-[300px] flex-shrink-0">
               <ContentCard title={role.title} image={role.image} link={role.link} />

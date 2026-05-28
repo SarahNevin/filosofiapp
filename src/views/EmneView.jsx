@@ -58,7 +58,7 @@ export default function EmneView() {
 
       {/* Slider */}
       <div className="mt-8">
-        <ScrollableSlider>
+        <ScrollableSlider title="Hvad vil du udforske?">
           {lessons.map((lesson, index) => (
             <div key={index} className="w-[332px] h-[300px] flex-shrink-0">
               <ContentCard title={lesson.title} image={lesson.image} link={lesson.link} />
