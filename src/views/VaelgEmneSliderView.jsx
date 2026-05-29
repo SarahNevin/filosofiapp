@@ -43,7 +43,7 @@ export default function VaelgEmneView() {
               <img
                 src={screen.image}
                 alt={screen.title}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover md:object-contain"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>

@@ -20,7 +20,7 @@ function PageSlider({ children, onIndexChange }) {
       className="relative w-full h-full overflow-x-auto flex snap-x snap-mandatory hide-scrollbar scroll-smooth"
     >
       {children.map((child, index) => (
-        <div key={index} className="w-full h-full flex-shrink-0 snap-start">
+        <div key={index} className="relative w-full h-full flex-shrink-0 snap-start">
           {child}
         </div>
       ))}
