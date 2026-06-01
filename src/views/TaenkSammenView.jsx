@@ -5,21 +5,23 @@ import Guidetekst from "../components/Guidetekst";
 import ScrollableSlider from "../components/ScrollableSlider";
 import ContentCard from "../components/ContentCard";
 
-import taenkSammen from "../assets/images/taenk-sammen.png";
+import huleboer from "../assets/images/huleboer.png";
+import frigjorte from "../assets/images/den-frigjorte.png";
+import dommer from "../assets/images/dommer.png";
 
 export default function TaenkSammenView() {
     const roles = [
     {
       title: "Huleboer",
-      image: taenkSammen,
+      image: huleboer,
     },
     {
       title: "Den Frigjorte",
-      image: taenkSammen,
+      image: frigjorte,
     },
     {
       title: "Dommer",
-      image: taenkSammen,
+      image: dommer,
     },
   ];
 
