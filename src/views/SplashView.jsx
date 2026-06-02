@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import trane from "../assets/images/trane.svg";
 import sofiesVerden from "../assets/images/sofies-verden-logo-hvid.svg";
-import GyldendalLogo from "../assets/images/gyldendal-logo.svg";  
+import GyldendalLogo from "../assets/images/gyldendal-logo.svg";
 
 export default function SplashView() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    useEffect(() => {
+  useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/onboarding");
     }, 5000);
@@ -15,16 +16,17 @@ export default function SplashView() {
   }, [navigate]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
-          <img
-            src={sofiesVerden}
-            alt="Sofies Verden logo"
-        />
-        <img
-            src={GyldendalLogo}
-            alt="Gyldendal logo"
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 w-30"
-        />
+    <div>
+        {/* Sofies Verden Logo */}
+        <img src={sofiesVerden} alt="Sofies Verden logo" className="absolute top-6 left-1/2 -translate-x-1/2 w-[360px]" />
+
+
+      {/* Trane */}
+      <img src={trane} alt="Trane" className="trane z-10" />
+
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30">
+        <img src={GyldendalLogo} alt="Gyldendal logo" className="w-30" />
+      </div>
     </div>
   );
 }

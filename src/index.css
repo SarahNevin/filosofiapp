@@ -117,3 +117,37 @@ p, li {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+/* Trane-animation på Splash screen */
+
+@layer utilities {
+ .trane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+
+  transform: translate(-50%, -50%);
+  animation: floatIn 2s ease-out forwards, flap 1.2s ease-in-out infinite;
+}
+
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+
+  @keyframes flap {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-4px) rotate(-2deg);
+    }
+  }
+}
