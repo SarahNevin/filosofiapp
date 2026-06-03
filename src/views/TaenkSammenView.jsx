@@ -4,6 +4,8 @@ import Tekstblok from "../components/Tekstblok";
 import Guidetekst from "../components/Guidetekst";
 import ScrollableSlider from "../components/ScrollableSlider";
 import ContentCard from "../components/ContentCard";
+import { CtaKnap } from "../components/CtaKnap";
+import { useNavigate } from "react-router-dom";
 
 import huleboer from "../assets/images/huleboer.png";
 import frigjorte from "../assets/images/den-frigjorte.png";
@@ -24,6 +26,8 @@ export default function TaenkSammenView() {
       image: dommer,
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen pb-[91px]">
@@ -67,6 +71,12 @@ export default function TaenkSammenView() {
           <li>Hvordan er det, at være alene om at se noget anderledes?</li>
         </ul>
       </Tekstblok>
+
+            <div className="flex justify-center mt-10 mb-6">
+              <CtaKnap onClick={() => navigate("/emne")}>
+                Tilbage til emnet
+              </CtaKnap>
+            </div>
 
       <Navigation />
     </div>
