@@ -18,7 +18,7 @@ export default function SplashView() {
   return (
     <div>
         {/* Sofies Verden Logo */}
-        <img src={sofiesVerden} alt="Sofies Verden logo" className="absolute top-6 left-1/2 -translate-x-1/2 w-[360px]" />
+        <img src={sofiesVerden} alt="Sofies Verden logo" className="absolute top-20 left-1/2 -translate-x-1/2 w-[360px]" />
 
 
       {/* Trane */}
